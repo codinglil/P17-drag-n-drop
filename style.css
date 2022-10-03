@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: steelblue;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.empty {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.fill {
+  background-image: url("https://source.unsplash.com/random/150X150");
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.hold {
+  border: 5px solid #ccc;
+}
+
+.hovered {
+  background: #333;
+  border: white;
+  border-style: dashed;
+}
